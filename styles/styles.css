@@ -24,7 +24,9 @@ body {
 
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
 
-
+.flex {
+    display: flex;
+}
  
 
 /************* site-wide text styling *************/
@@ -42,9 +44,38 @@ body {
         - change the cursor to pointer.
 */
 
+h1 {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
 
+.large-text {
+    font-size: 24px;
+}
 
+.fake-button {
+    background-color: #E5AF42;
+    text-align: center;
+    line-height: 3;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
 
 
 
