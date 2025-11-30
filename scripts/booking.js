@@ -3,7 +3,16 @@
 // Do any of these variables need to be initialized when the page is loaded? 
 // When do they need to be reset or updated?
 
+let selectedDays = [];
+let dayRate = 35;
+const halfDayRate = 50;
+const fullDayRate = 90;
 
+const dayButtons = document.querySelectorAll(".day");
+const clearButton = document.getElementById("clear-button");
+const halfButton = document.getElementById("half");
+const fullButton = document.getElementById("full");
+const calculatedCostElement = document.getElementById("calculated-cost");
 
 
 /********* colour change days of week *********/
