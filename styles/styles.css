@@ -210,6 +210,10 @@ footer {
     text-align: center;
 }
 
+.day:hover {
+    background-color:#E5AF42;
+}
+
 .small-button {
     border: 1px solid black;
     padding: 5px;
@@ -228,7 +232,10 @@ footer {
     background-color: #E5AF42;
 }
 
-
+.animate {
+    transform: scale(1.2);
+    transition:transform 0.3s ease;
+}
 
 
 

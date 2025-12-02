@@ -28,6 +28,7 @@ dayButtons.forEach(day => {
             selectedDays.delete(day.id);
         }
         calculateCost();
+        animateElement(day);
     })
 })
 
@@ -40,6 +41,7 @@ clearButton.addEventListener("click", () => {
     dayButtons.forEach(day => day.classList.remove("clicked"));
     selectedDays.clear();
     constDisplay.innerHTML = 0;
+    animateElement(clearButton);
 })
 
 
@@ -54,6 +56,7 @@ halfButton.addEventListener("click", () => {
     halfButton.classList.add("clicked");
     fullButton.classList.remove("clicked");
     calculateCost();
+    animateElement(halfButton);
 });
 
 
@@ -64,6 +67,7 @@ fullButton.addEventListener("click", () => {
     fullButton.classList.add("clicked");
     halfButton.classList.remove("clicked");
     calculateCost();
+    animateElement(fullButton);
 });
 
 
@@ -74,4 +78,9 @@ fullButton.addEventListener("click", () => {
 function calculateCost() {
     const total = selectedDays.size * dailyRate;
     constDisplay.innerHTML = total;
+}
+
+function animateElement(element) {
+    element.classList.add("animate");
+    setTimeout(() => element.classList.remove("animate"), 300);
 }
