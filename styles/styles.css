@@ -77,6 +77,13 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.fake-button:hover, 
+.blue-hover:hover {
+    text-decoration: underline;
+    background-color: #4278e5;
+    color: white;
+    cursor: pointer;
+}
 
 
 
@@ -90,6 +97,38 @@ footer a:hover {
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
+header, footer {
+    background-color: #E5AF42;
+}
+
+header {
+    height: px;
+    margin-bottom: 25px
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 25px 0 25px 25px;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+footer {
+    height: 60px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 
 
@@ -105,8 +144,36 @@ footer a:hover {
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
 
+.index .flex {
+    align-items: flex-start;
+}
 
+.index section.about-us {
+    flex: 1;
+    margin-right: 25px;
+}
 
+.index img {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.index h2 {
+    line-height: 36px;
+}
+
+.index p {
+    margin-bottom: 12px;
+}
+
+.index .fake-button {
+    width: 250px;
+}
+
+.index .flex:last-of-type {
+    justify-content: center;
+    gap: 150px;
+}
 
 
 
@@ -124,8 +191,42 @@ footer a:hover {
 
 */
 
+.booking-page {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+}
 
+.day-selector {
+    margin-bottom: 12px;
+    justify-content: center;
+    gap: 20px;
+}
 
+.day {
+    width: 60px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.small-button {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+#clear-button {
+    background-color: #E5AF42;
+}
+
+.clicked {
+    background-color: #E5AF42;
+}
 
 
 
@@ -145,6 +246,54 @@ footer a:hover {
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
+.contact main {
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.contact h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
 
+.contact form {
+    display: grid;
+    grid-template-columns: 150px 300px;
+    column-gap: 24px;
+    align-items: start;
+}
 
+.contact form > .flex {
+    display: contents;
+}
+
+.contact label {
+    text-align: right;
+}
+
+.contact input, 
+.contact textarea {
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid black;
+    margin-bottom: 24px;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+#submit-button {
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid black;
+    margin-bottom: 24px;
+    margin-left: 174px;
+}
